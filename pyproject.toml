@@ -1,0 +1,25 @@
+[project]
+name = "auth"
+version = "1"
+description = ""
+authors = [
+    {name = "Bonyjairs",email = "150530049+Bonyjairs@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "pyjwt[crypto] (>=2.10.1,<3.0.0)",
+    "aiosqlite (>=0.21.0,<0.22.0)",
+    "sqlalchemy (>=2.0.42,<3.0.0)",
+    "uvicorn (>=0.35.0,<0.36.0)",
+    "bcrypt (>=4.3.0,<5.0.0)",
+    "pydantic[email] (>=2.11.7,<3.0.0)",
+    "alembic (>=1.16.4,<2.0.0)",
+    "python-multipart (>=0.0.20,<0.0.21)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
