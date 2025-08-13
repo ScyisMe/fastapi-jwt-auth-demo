@@ -2,7 +2,6 @@ import jwt
 import bcrypt
 
 from datetime import datetime, timedelta, timezone
-
 from core.config import setting
 
 def encode_jwt(
@@ -29,7 +28,7 @@ def encode_jwt(
         algorithm=algorithm,
     )
     return encoded
-    
+
 
 def hash_password(
     password: str
